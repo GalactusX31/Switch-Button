@@ -1,0 +1,9 @@
+{
+    "name": "Switch_Button",
+    "version": "0.1.5",
+    "title": "Switch Button",
+    "author": "GalactusX31",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "This mod adds a switch button with capacity for a single logical signal.  It also allow to change the way it work by mod settings, to change his state when the player do left-mouse, and open his gui inventory by pressing his keybind"
+}
