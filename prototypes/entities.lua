@@ -1,14 +1,18 @@
-require ("circuit-connector-sprites")
+require ('circuit-connector-sprites')
 
-local switchbutton = table.deepcopy(data.raw["constant-combinator"]["constant-combinator"])
-switchbutton.name = "switchbutton"
-switchbutton.icon = "__Switch_Button__/graphics/Switch_Button_OFF.png"
+local switchbutton = table.deepcopy(data.raw['constant-combinator']['constant-combinator'])
+switchbutton.name = 'switchbutton'
+switchbutton.icon = '__Switch_Button__/graphics/Switch_Button_OFF.png'
 switchbutton.icon_size = 40
 switchbutton.item_slot_count = 1
-switchbutton.minable.result = "switchbutton"
+switchbutton.minable.result = 'switchbutton'
+
+if not settings.startup['ShowBonusGui'].value then
+  switchbutton.flags = {'hide-alt-info'}
+end
 
 local sprite = {
-  filename = "__Switch_Button__/graphics/Switch_Button_OFF.png",
+  filename = '__Switch_Button__/graphics/Switch_Button_OFF.png',
   width = 40,
   height = 40,
   frame_count = 1,
@@ -24,7 +28,7 @@ switchbutton.sprites = {
 
 local activity_led_light_offset = {0, 0}
 local activity_led_sprite = {
-  filename = "__Switch_Button__/graphics/Switch_Button_ON.png",
+  filename = '__Switch_Button__/graphics/Switch_Button_ON.png',
   width = 40,
   height = 40,
   frame_count = 1,
